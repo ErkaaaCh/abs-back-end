@@ -3,6 +3,9 @@ const app = express();
 const { Client } = require("pg");
 require("dotenv").config();
 
+app.use(express.json());
+app.use(cors());
+
 const client = new Client({
   user: process.env.PGUSER,
   host: process.env.PGHOST,
