@@ -8,6 +8,7 @@ app.use(cors());
 
 const userRoutes = require("./src/routes/user.route");
 const serviceRoutes = require("./src/routes/service.route");
+const customerRoutes = require("./src/routes/customer.route");
 
 app.get("/", (req, res) => {
   res.send("Hello, Express!");
@@ -15,6 +16,7 @@ app.get("/", (req, res) => {
 
 app.use("/users" , userRoutes);
 app.use("/services" , serviceRoutes);
+app.use("/customers" , customerRoutes);
 
 const PORT = process.env.PORT || 4004;
 
