@@ -1,8 +1,3 @@
-# Node modules (large directory, not needed in version control)
-node_modules/
-
-# Logs and error logs
-error_logs/
-
-# Package lock file 
+/node_modules
 package-lock.json
+
