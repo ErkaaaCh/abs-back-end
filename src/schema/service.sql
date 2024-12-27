@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS books (
+    id SERIAL PRIMARY KEY, 
+    serviceName VARCHAR(100) NOT NULL,     
+    category VARCHAR(100) NOT NULL, 
+    description VARCHAR(100) NOT NULL, 
+    serviceImage VARCHAR(100) NOT NULL, 
+    duration INTEGER NOT NULL, 
+    price NUMERIC NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,  
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP  
+);
